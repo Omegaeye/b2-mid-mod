@@ -1,0 +1,10 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Years_Experience</th>
+  </tr>
+  <tr>
+    <td> <%= link_to "#{@mechanic.name}", "/mechanics/#{@mechanic.id}" %> </td>
+    <td> <%= @mechanic.years_experience %> </td>
+  </tr>
+</table>

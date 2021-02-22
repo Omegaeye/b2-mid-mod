@@ -1,0 +1,15 @@
+<%= render "/shared/mech_table" %>
+
+<h2> Rides Working On: </h2>
+<% @mechanic.rides_work.each do |ride| %>
+<% @ride = ride %>
+  <%= render "/shared/ride_table"%><br>
+<% end %>
+
+<div>
+<%= form_with url: "/mechanics/#{@mechanic.id}", method: :post, local: true do |f| %>
+  <%= f.label "Ride Id:" %>
+  <%= f.number_field :ride_id, required: true%>
+  <%= f.submit "Add a Job" %>
+<% end %>
+</div>

@@ -1,0 +1,6 @@
+<h1> All Rides </h1>
+
+<% @rides.each do |ride| %>
+<% @ride = ride %>
+<%= render "/shared/ride_table" %>
+<% end %>

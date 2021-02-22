@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>ID:</th>
+    <th>Thrill_Rating</th>
+    <th>Open</th>
+
+  </tr>
+  <tr>
+    <td> <%= link_to "#{@ride.name}", "/mechanics/#{@ride.id}" %> </td>
+    <td> <%= @ride.id %> </td>
+    <td> <%= @ride.thrill_rating %> </td>
+    <td> <%= @ride.open %> </td>
+  </tr>
+</table>

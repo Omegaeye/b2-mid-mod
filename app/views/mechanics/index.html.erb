@@ -1,0 +1,10 @@
+<h1> All Mechanics </h1>
+
+<% @mechanics.each do |mechanic| %>
+<% @mechanic = mechanic %>
+  <%= render "/shared/mech_table" %>
+
+<% end %>
+
+<h2> Average Years of Experience of all Mechanics </h2>
+<%= @mechanics.average_yr_experience %>
